@@ -1,0 +1,10 @@
+SRCS=WinEventsSDL.cpp \
+     WinEventsLinux.cpp \
+     WinEventsX11.cpp \
+     WinSystem.cpp \
+     WinEvents.cpp
+
+LIB=windowing.a
+
+include ../../Makefile.include
+-include $(patsubst %.cpp,%.P,$(patsubst %.c,%.P,$(SRCS)))
