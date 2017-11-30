@@ -64,6 +64,7 @@ protected:
   virtual void  Process();
 
   void          DrainQueues();
+  void          DumpTrackingQueue();
   void          StartSampleProviderWithBlock();
   void          StopSampleProvider();
 
@@ -87,6 +88,7 @@ protected:
   double                  m_dts;
   double                  m_pts;
   int                     m_speed;
+  AVCodecID               m_codec;
   int                     m_width;
   int                     m_height;
   DVDVideoPicture         m_videobuffer;
@@ -95,7 +97,8 @@ protected:
 
   CAVFCodecMessage       *m_messages;
   uint64_t                m_framecount;
-  double                  m_framerate_ms;
+  double                  m_fps;
+  double                  m_lastTrackingTS;
 };
 #endif
 
