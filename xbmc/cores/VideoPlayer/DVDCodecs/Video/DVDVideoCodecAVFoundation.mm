@@ -503,7 +503,7 @@ void CDVDVideoCodecAVFoundation::SetClock(CDVDClock *clock)
 
 unsigned CDVDVideoCodecAVFoundation::GetAllowedReferences()
 {
-  return 0;
+  return 3;
 }
 
 void CDVDVideoCodecAVFoundation::SetCodecControl(int flags)
