@@ -1326,7 +1326,8 @@ void CRenderManager::PrepareNextRender()
     while (m_queued.front() != idx)
     {
       requeue(m_discard, m_queued);
-      m_QueueSkip++;
+      if (m_format != RENDER_FMT_BYPASS)
+		  m_QueueSkip++;
     }
 
     int lateframes = (renderPts - m_Queue[idx].pts) * m_fps / DVD_TIME_BASE;
