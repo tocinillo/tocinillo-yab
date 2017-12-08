@@ -27,6 +27,7 @@
 #define BOOL XBMC_BOOL
 #import "Application.h"
 
+#import "Util.h"
 #import "cores/AudioEngine/AEFactory.h"
 #import "guilib/GUIWindowManager.h"
 #import "input/Key.h"
@@ -50,6 +51,15 @@
 
 #import <MediaPlayer/MPMediaItem.h>
 #import <MediaPlayer/MPNowPlayingInfoCenter.h>
+#import <AVFoundation/AVDisplayCriteria.h>
+#import <AVKit/AVDisplayManager.h>
+#import <AVKit/UIWindow.h>
+
+@interface AVDisplayCriteria()
+@property(readonly) int videoDynamicRange;
+@property(readonly, nonatomic) float refreshRate;
+- (id)initWithRefreshRate:(float)arg1 videoDynamicRange:(int)arg2;
+@end
 
 using namespace KODI::MESSAGING;
 
@@ -60,6 +70,8 @@ MainController *g_xbmcController;
 @interface MainController ()
 @property (strong, nonatomic) NSTimer *pressAutoRepeatTimer;
 @property (strong, nonatomic) NSTimer *remoteIdleTimer;
+@property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, assign) float displayRate;
 @end
 
 #pragma mark - MainController implementation

@@ -89,6 +89,7 @@ protected:
   double                  m_pts;
   int                     m_speed;
   AVCodecID               m_codec;
+  int                     m_profile;
   int                     m_width;
   int                     m_height;
   DVDVideoPicture         m_videobuffer;

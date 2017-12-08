@@ -3407,6 +3407,7 @@
 		F5BD02F6148D3A7E001B5583 /* CryptThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BD02F4148D3A7E001B5583 /* CryptThreading.cpp */; };
 		F5BDB80C120202F400F0B710 /* DVDSubtitleTagSami.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BDB80B120202F400F0B710 /* DVDSubtitleTagSami.cpp */; };
 		F5BDB81A1202032400F0B710 /* DVDSubtitleTagMicroDVD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BDB8191202032400F0B710 /* DVDSubtitleTagMicroDVD.cpp */; };
+		F5C28F101FC7D19B00F63834 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C28F0F1FC7D19B00F63834 /* AVKit.framework */; };
 		F5CC228B1814F7E9006B5E91 /* AESinkDARWINOSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5CC22891814F7E9006B5E91 /* AESinkDARWINOSX.cpp */; };
 		F5CC22DF1814FF3B006B5E91 /* ActiveAE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5CC22D31814FF3B006B5E91 /* ActiveAE.cpp */; };
 		F5CC22E01814FF3B006B5E91 /* ActiveAEBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5CC22D51814FF3B006B5E91 /* ActiveAEBuffer.cpp */; };
@@ -6211,6 +6212,7 @@
 		F5BDB80B120202F400F0B710 /* DVDSubtitleTagSami.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DVDSubtitleTagSami.cpp; sourceTree = "<group>"; };
 		F5BDB8181202032400F0B710 /* DVDSubtitleTagMicroDVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDSubtitleTagMicroDVD.h; sourceTree = "<group>"; };
 		F5BDB8191202032400F0B710 /* DVDSubtitleTagMicroDVD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DVDSubtitleTagMicroDVD.cpp; sourceTree = "<group>"; };
+		F5C28F0F1FC7D19B00F63834 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		F5CC22891814F7E9006B5E91 /* AESinkDARWINOSX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AESinkDARWINOSX.cpp; path = Sinks/AESinkDARWINOSX.cpp; sourceTree = "<group>"; };
 		F5CC228A1814F7E9006B5E91 /* AESinkDARWINOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AESinkDARWINOSX.h; path = Sinks/AESinkDARWINOSX.h; sourceTree = "<group>"; };
 		F5CC228D1814F7F7006B5E91 /* AESinkDARWINIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AESinkDARWINIOS.h; path = Sinks/AESinkDARWINIOS.h; sourceTree = "<group>"; };
@@ -6304,6 +6306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			    F5C28F101FC7D19B00F63834 /* AVKit.framework in Frameworks */,
 				7CD46A141CCDEA7500BF4AD4 /* VideoToolbox.framework in Frameworks */,
 				F5ED9BFB155EC77400842059 /* ApplicationServices.framework in Frameworks */,
 				E38E23930D2626E600618676 /* AudioUnit.framework in Frameworks */,
@@ -6380,6 +6383,7 @@
 		08FB7794FE84155DC02AAC07 /* Kodi */ = {
 			isa = PBXGroup;
 			children = (
+			    F5C28F0F1FC7D19B00F63834 /* AVKit.framework */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				08FB779DFE84155DC02AAC07 /* System Libs and Frameworks */,
 				E49910C2174E2CDE00741B6D /* Configurations */,

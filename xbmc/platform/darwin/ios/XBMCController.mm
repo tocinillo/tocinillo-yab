@@ -78,7 +78,11 @@ const NSString *MPNowPlayingInfoPropertyPlaybackQueueCount = @"MPNowPlayingInfoP
 XBMCController *g_xbmcController;
 
 //--------------------------------------------------------------
-//
+- (float)getDisplayRate
+ {
+   return 0.0;
+ }
+ //--------------------------------------------------------------
 
 @interface XBMCController ()
 - (void)rescheduleNetworkAutoSuspend;

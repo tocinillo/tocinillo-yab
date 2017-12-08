@@ -35,6 +35,7 @@
       </group>
       <group id="2" label="19177">
         <setting id="videoplayer.adjustrefreshrate" type="integer" label="170" help="36164">
+		  <requirement>hasDisplayRateSwitching</requirement>
           <level>1</level>
           <default>0</default> <!-- ADJUST_REFRESHRATE_OFF -->
           <constraints>

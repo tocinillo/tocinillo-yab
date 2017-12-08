@@ -69,11 +69,6 @@
   </section>
   <section id="player">
     <category id="videoplayer">
-      <group id="2">
-        <setting id="videoplayer.adjustrefreshrate">
-          <visible>false</visible>
-        </setting>
-      </group>
       <group id="3">
         <setting id="videoplayer.hqscalers">
           <visible>false</visible>
